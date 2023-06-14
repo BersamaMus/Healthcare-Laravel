@@ -73,6 +73,7 @@
                             <option value="Neurology" {{ $data->specialty == "Neurology" ? 'selected' : '' }}>Neurology</option>
                             <option value="ENT" {{ $data->specialty == "ENT" ? 'selected' : '' }}>ENT (Ear, Nose, and Throat)</option>
                             <option value="Psychiatry" {{ $data->specialty == "Psychiatry" ? 'selected' : '' }}>Psychiatry</option>
+                            <option value="Gynecology" {{ $data->specialty == "Gynecology" ? 'selected' : '' }}>Gynecology</option>
                         </select>
                     </div>
                     <div style="padding: 15px; display: flex; align-items: center;">
