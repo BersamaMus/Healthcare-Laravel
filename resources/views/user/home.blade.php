@@ -6,7 +6,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
 
   <title>Healthcare Laravel System - Home</title>
 
@@ -68,17 +68,17 @@
         <div class="collapse navbar-collapse" style="visibility: visible !important;" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="home">Home</a>
             </li>
             <li class="nav-item">
             <!--  <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item"> -->
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <!-- <a class="nav-link" href="doctors.html">Doctors</a> -->
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="blog.html">News</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li> -->

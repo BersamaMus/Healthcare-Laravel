@@ -2,7 +2,7 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="admin/assets/images/logo-mini.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="home"><img src="admin/assets/images/logo-mini.svg" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -11,13 +11,13 @@
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100">
             <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-              <input type="text" class="form-control" placeholder="Search products">
+           <!--   <input type="text" class="form-control" placeholder="Search products"> -->
             </form>
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+           <!-- <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
               <h6 class="p-3 mb-0">Projects</h6>
               <div class="dropdown-divider"></div>
@@ -55,13 +55,13 @@
               </a>
               <div class="dropdown-divider"></div>
               <p class="p-3 mb-0 text-center">See all projects</p>
-            </div>
+            </div> -->
           </li>
-          <li class="nav-item nav-settings d-none d-lg-block">
+        <!--  <li class="nav-item nav-settings d-none d-lg-block">
             <a class="nav-link" href="#">
               <i class="mdi mdi-view-grid"></i>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown border-left">
             <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="mdi mdi-email"></i>
