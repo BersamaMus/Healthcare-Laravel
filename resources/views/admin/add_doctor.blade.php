@@ -78,6 +78,7 @@
                         <option value="Neurology">Neurology</option>
                         <option value="ENT">ENT (Ear, Nose, and Throat)</option>
                         <option value="Psychiatry">Psychiatry</option>
+                        <option value="Gynecology">Gynecology</option>
                     </select>
                 </div>
                 <div style="padding: 15px; display: flex; align-items: center;">
