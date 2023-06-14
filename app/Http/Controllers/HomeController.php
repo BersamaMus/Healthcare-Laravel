@@ -7,23 +7,26 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Doctor;
 use App\Models\Appointment;
+use App\Models\Post;
+use Carbon\Carbon;
 class HomeController extends Controller
 {
     public function redirect()
-    {
+    {   //If user is logged in
         if(Auth::id()){
-            if(Auth::user()->usertype=='0'){
+            if(Auth::user()->usertype=='0'){ //if user is not admin
                 $doctor = doctor::all();
-                return view('user.home',compact('doctor'));
+                $post = post::all();
+                return view('user.home',compact('doctor','post'));
             }
 
             else{
-                return view('admin.home');
+                return view('admin.home'); //admin will redirect
             }
         }
 
         else{
-            return redirect()->back();
+            return redirect()->back(); //else will just go to normal home
         }
     }
 
@@ -37,7 +40,12 @@ class HomeController extends Controller
         else{
         //Display Doctor at Home
         $doctor = doctor::all();
-        return view('user.home',compact('doctor'));
+
+        //Display Post at Home
+        $post = post::all();
+
+        //Return data to Home
+        return view('user.home',compact('doctor','post'));
         }
     }
 
@@ -60,11 +68,13 @@ class HomeController extends Controller
         return redirect()->back()->with('message','Appointment Request Successful. We will contact with you soon');
     }
 
+    //View appointment at home
+
     public function myappointment(){
 
         if(Auth::id())
         {
-            $userid=Auth::user()->id;
+            $userid=Auth::user()->id; //get id from auth
             //if user id match then it will return appointment
             $appoint=appointment::where('user_id',$userid)->get();
             return view('user.my_appointment',compact('appoint'));
@@ -74,7 +84,7 @@ class HomeController extends Controller
         return redirect()->back();
        }
     }
-
+    //based on id it will delete the appointment
     public function cancel_appoint($id){
         $data=appointment::find($id);
         $data->delete();
