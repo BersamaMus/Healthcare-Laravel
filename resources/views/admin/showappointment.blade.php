@@ -35,7 +35,7 @@
         <table class="table table-hover table-dark">
             <thead class="thead-light">
               <tr>
-                <th scope="col">Customer Name</th>
+                <th scope="col">Patient Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
                 <th scope="col">Doctor Name</th>

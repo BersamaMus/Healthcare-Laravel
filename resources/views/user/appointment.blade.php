@@ -27,7 +27,7 @@
             </select>
           </div>
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <input type="phone" class="form-control" placeholder="Number..">
+            <input type="phone" name="phone" class="form-control" placeholder="Phone Number..">
           </div>
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
             <textarea name="message" id="message" class="form-control" rows="6" placeholder="Enter message.."></textarea>
