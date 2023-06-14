@@ -48,4 +48,10 @@ Route::get('/approved/{id}',[AdminController::class, 'approved']);
 Route::get('/rejected/{id}',[AdminController::class, 'rejected']);
 
 
-
+//Admin Manage Posts
+Route::get('/add_post_view',[AdminController::class, 'addpost']);
+Route::post('/upload_post',[AdminController::class, 'uploadpost']);
+Route::get('/showpost',[AdminController::class, 'showpost']);
+Route::get('/deletepost/{id}',[AdminController::class, 'deletepost']);
+Route::get('/updatepost/{id}',[AdminController::class, 'updatepost']);
+Route::post('/editpost/{id}',[AdminController::class, 'editpost']);

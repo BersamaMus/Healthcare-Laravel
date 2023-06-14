@@ -19,10 +19,9 @@
             <table class="table table-hover table-dark">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col">Doctor Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Specialty</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Link</th>
                     <th scope="col">Image</th>
                     <th scope="col">Update</th>
                     <th scope="col">Delete</th>
@@ -31,17 +30,16 @@
                   </tr>
                 </thead>
                 <tbody>
-                    @foreach ($data as $doctor )
+                    @foreach ($post as $posts )
 
 
                   <tr>
-                    <th scope="row">{{$doctor->name}}</th>
-                    <td>{{$doctor->email}}</td>
-                    <td>{{$doctor->phone}}</td>
-                    <td>{{$doctor->specialty}}</td>
-                    <td> <img style="max-width: 100%;max-height: 100%;"src="doctorimage/{{$doctor->image}}" alt=""></td>
-                    <td><a class="btn btn-success" onclick="return confirm('Update this information?')"href="{{url('updatedoctor',$doctor->id)}}">Update</a></td>
-                    <td><a class="btn btn-danger" onclick="return confirm('Are you sure? This cannot be undone!')"href="{{url('deletedoctor',$doctor->id)}}">Delete</a></td>
+                    <th scope="row">{{$posts->title}}</th>
+                    <td>{{$posts->name}}</td>
+                    <td><a href="{{$posts->link}}">{{$posts->link}}</a></td>
+                    <td> <img style="max-width: 100%;max-height: 100%;"src="post/{{$posts->image}}" alt=""></td>
+                    <td><a class="btn btn-success" onclick="return confirm('Are you sure to update this?')"href="{{url('updatepost',$posts->id)}}">Update</a></td>
+                    <td><a class="btn btn-danger" onclick="return confirm('Are you sure to delete this?')"href="{{url('deletepost',$posts->id)}}">Delete</a></td>
                   </tr>
 
                   @endforeach
