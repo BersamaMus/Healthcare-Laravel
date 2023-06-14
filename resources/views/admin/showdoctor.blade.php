@@ -55,8 +55,8 @@
                     <td>{{$doctor->phone}}</td>
                     <td>{{$doctor->specialty}}</td>
                     <td> <img style="max-width: 100%;max-height: 100%;"src="doctorimage/{{$doctor->image}}" alt=""></td>
-                    <td><a class="btn btn-success" onclick="return confirm('Are you sure to update this?')"href="{{url('updatedoctor',$doctor->id)}}">Update</a></td>
-                    <td><a class="btn btn-danger" onclick="return confirm('Are you sure to delete this?')"href="{{url('deletedoctor',$doctor->id)}}">Delete</a></td>
+                    <td><a class="btn btn-success" onclick="return confirm('Update this information?')"href="{{url('updatedoctor',$doctor->id)}}">Update</a></td>
+                    <td><a class="btn btn-danger" onclick="return confirm('Are you sure? This cannot be undone!')"href="{{url('deletedoctor',$doctor->id)}}">Delete</a></td>
                   </tr>
 
                   @endforeach

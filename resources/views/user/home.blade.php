@@ -50,7 +50,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="text-primary">Healthcare</span>-System</a>
+        <a class="navbar-brand" href="home"><span class="text-primary">Healthcare</span>-System</a>
 
         <form action="#">
           <div class="input-group input-navbar">
