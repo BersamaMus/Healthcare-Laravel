@@ -30,7 +30,7 @@
             <form action="{{url('editpost',$data->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div style="padding: 15px; display: flex; align-items: center;">
-                    <label style="margin-right: 5px;">Title:</label>
+                    <label style="margin-right: 70px;">Title:</label>
                     <input type="text" style="color: black;" name="title" placeholder="Insert Title" value="{{$data->title}}">
                 </div>
                 <div style="padding: 15px; display: flex; align-items: center;">
@@ -38,16 +38,16 @@
                     <input type="text" style="color: black;" name="name" placeholder="Insert Author Name" value="{{$data->name}}">
                 </div>
                 <div style="padding: 15px; display: flex; align-items: center;">
-                    <label style="margin-right: 5px;">Link:</label>
+                    <label style="margin-right: 74px;">Link:</label>
                     <input type="text" style="color: black;" name="link" placeholder="Insert Link" value="{{$data->link}}">
                 </div>
                 <div style="padding: 15px; display: flex; align-items: center;">
-                    <label style="margin-right: 5px;">Old Image:</label>
+                    <label style="margin-right: 30px;">Old Image:</label>
                     <img style="height: 300px;width: 300px;" src="post/{{$data->image}}" alt="">
                 </div>
 
                 <div style="padding: 15px; display: flex; align-items: center;">
-                    <input type="file" name="file" value="">
+                    <input type="file" ;" name="file" value="">
                 </div>
 
                 <div align="center" style="padding: 15px;">
