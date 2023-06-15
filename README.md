@@ -159,5 +159,16 @@ The footer for user homepage. A standard set of elements to have in a website.
 
 ## Challenge/difficulties to develop the application
 
+One of the most difficult challenges in developing this application is the time that we are given to complete this fully functional website. We are given 2 weeks to develop 5 modules during our final 4 weeks, which
+also clash with our other subjects projects and final assesments. However, with thorough time management, this task is possible.
+
+Another challenge for us in creating this website is pitching an idea for a website that has a scope large enough that it could be a useful website that people would regularly use. Which was why we chose a Healthcare
+System as our theme as people everywhere need healthcare and what better way to make people's lives easier than to make people able to book appointments online instead of having to line up in a long queue
+in a hospital or clinic.
+
+Overall, we are happy with the results that we have achieved for this project. Please do bear in mind that this project can have many errors due to no error exception handling. Feel free to use this project of ours
+for your education or your future final year projects. 
+
+
 ### Wan SaifulAmir:
 > The most challenging aspect of working with Laravel is the interconnected nature of its components. Making changes to one component without considering their impact on others can lead to functionality issues and potential breakages in the application. This challenge is especially critical when dealing with user authentication, as any alterations or customizations without a thorough understanding can result in login failures, access restrictions, or security vulnerabilities.  :+1:
