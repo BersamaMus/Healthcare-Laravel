@@ -10,7 +10,7 @@ Group Members:
 
 Lecturer: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
-INTRODUCTION
+# INTRODUCTION
 
 The healthcare industry plays an important role in society by offering crucial medical services and promoting a healthy lifestyle. However, it can be challenging to manage all of the healthcare operations, patient record, and appointment scheduling. To handle these issues, we propose a full web application that can provide a solution for healthcare management. This application will act as a centralized platform for doctors, nurses, administrators, and patients to simplify several processes and increase the general effectiveness of healthcare services. We want to develop a web application that is secure, flexible, and meets the requirements of the healthcare sector.
 
@@ -18,7 +18,7 @@ Healthcare workers will be able to maintain patient records effectively and quic
 
 Throughout the application, we will ensure data management and protect data integrity. In addition, to offer a user-friendly experience, the suggested web application would have attractive and clear user interfaces, interactive forms, and simple navigation.The focus will be on enhancing operational effectiveness, improving patient care results, and promoting efficient communication and collaboration among healthcare providers.
 
-OBJECTIVE
+# OBJECTIVE
 
 The objective of our proposed web application is to address the challenges faced in healthcare management by providing a solution that simplifies multiple tasks and improves overall operational effectiveness. By integrating modules such as patient management, medical resources, appointment scheduling, inventory management, and medical staff management, we aim to simplify complex processes, reduce paperwork, and enhance the quality of patient care.
   
@@ -30,29 +30,29 @@ The objective of our proposed web application is to address the challenges faced
 
 4. Streamline Medical Staff Coordination: It might be difficult to manage the availability, credentials, and contact information of medical professionals. The web application will have a special module that administrators may use to keep current and correct records of healthcare professionals. This will make it possible for effective staff coordination, assigning tasks, and communication, which will enhance teamwork and workflow efficiency.
   
-FEATURES AND FUNCTIONALITIES
+# FEATURES AND FUNCTIONALITIES
 
-Module 1: Patient
+1. Patient
 Allows administrators to manage patient records, including personal information, medical history, and appointments. Patients can securely access their own profiles to update information, view medical history, and monitor appointments.
 
-Module 2: Medical Resources
+2. Medical Resources
 Provides a collection of healthcare resources such as articles, guidelines, and research papers.
 
 Administrators can add new resources, update existing ones, list available resources, and remove outdated or irrelevant materials.
 
-Module 3: Appointment 
+3. Appointment 
 Enables patients to book appointments with healthcare providers. Healthcare providers can view and manage their appointment schedules, including rescheduling and cancellations.
 
-Module 4: Inventory Management
+4. Inventory Management
 Manage their inventory of medical supplies, equipment, and medications.
 
-Module 5: Medical Staff Management
+5. Medical Staff Management
 Allows administrators to manage healthcare professionals' information, including their credentials, schedules, and contact details
 Staff members can access their profiles to update availability and view assigned tasks
 
 
 
-ERD Diagram
+# ER Diagram
 
 ![New DB (4)](https://github.com/BersamaMus/Web-Project/assets/130168686/05ecd496-57d1-4f3d-8066-76b9328e8322)
 
@@ -70,10 +70,10 @@ Homepage Mockup
 
 ![Homepage template](https://github.com/BersamaMus/Web-Project/assets/130168686/592ca589-154f-47e5-9f81-2fbf0852af08)
 
-Project system captured screen and explanation
+# Project system captured screen and explanation
 
 
-What is the challenge/difficulties to develop the application
+# What is the challenge/difficulties to develop the application
 
 Wan SaifulAmir:
-The most challenging aspect of working with Laravel is the interconnected nature of its components. Making changes to one component without considering their impact on others can lead to functionality issues and potential breakages in the application. This challenge is especially critical when dealing with user authentication, as any alterations or customizations without a thorough understanding can result in login failures, access restrictions, or security vulnerabilities.
+> The most challenging aspect of working with Laravel is the interconnected nature of its components. Making changes to one component without considering their impact on others can lead to functionality issues and potential breakages in the application. This challenge is especially critical when dealing with user authentication, as any alterations or customizations without a thorough understanding can result in login failures, access restrictions, or security vulnerabilities.  :+1:
