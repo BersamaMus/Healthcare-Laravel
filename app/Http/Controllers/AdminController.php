@@ -10,84 +10,87 @@ class AdminController extends Controller
 {
     public function addview(){
 
-        return view('admin.add_doctor');
+        return view('admin.add_doctor'); // Render the add_doctor view for the admin
     }
 
-
+    //Upload data from view to db
     public function upload(Request $request){
-        $doctor = new Doctor;
+        $doctor = new Doctor; // Create a new instance of the Doctor model
 
-        //get image file
+        // Get the image file from the request
         $image=$request->file;
 
-        //using time and file type as the name
+          // Generate a unique image name using the current time and file extension
         $imagename=time().'.'.$image->getClientOriginalExtension();
 
-        //move to public folder
+        // Move the image to the public folder
         $request->file->move('doctorimage', $imagename);
 
-        //save img from public folder to db
+        // Save the image name to the database
         $doctor->image=$imagename;
-
+         // Set other attributes of the doctor model from the request
         $doctor->name=$request->name;
         $doctor->email=$request->email;
         $doctor->phone=$request->phone;
         $doctor->specialty=$request->specialty;
 
-        $doctor->save();
+        $doctor->save(); // Save the doctor data to the database
 
-        return redirect()->back()->with('message','Doctor Added Successfully');
+        return redirect()->back()->with('message','Doctor Added Successfully'); // Redirect back with success message
     }
 
+    //admin can view all appointment
     public function showappointment(){
-            $data=appointment::all();
+            $data=appointment::all(); // Get all appointments
 
-        return view('admin.showappointment',compact('data'));
+        return view('admin.showappointment',compact('data')); // Render the showappointment view with the appointments data
     }
 
+    //admin can approve appointment
     public function approved($id){
-        //update table
-        $data=appointment::find($id);
-        $data->status='Approved';
 
-        $data->save();
+        $data=appointment::find($id); // Find the appointment by the given id
+        $data->status='Approved';  // Update the status of the appointment to 'Approved'
 
-        return redirect()->back();
+        $data->save(); // Save the updated appointment
+        return redirect()->back(); // Redirect back
 }
+//admin can reject appointment
+    public function rejected($id){
 
-public function rejected($id){
-    //update table
-    $data=appointment::find($id);
-    $data->status='Rejected';
+      $data=appointment::find($id); // Find the appointment by the given id
+      $data->status='Rejected'; // Update the status of the appointment to 'Rejected'
 
-    $data->save();
+      $data->save(); // Save the updated appointment
 
-    return redirect()->back();
+     return redirect()->back(); // Redirect back
 }
-
+//Admin can view all doctor
 public function showdoctor(){
 
-    $data=doctor::all();
+    $data=doctor::all(); // Get all doctors
 
-    return view('admin.showdoctor',compact('data'));
+    return view('admin.showdoctor',compact('data')); // Render the showdoctor view with the doctors data
 }
 
+//admin can delete doctor
 public function deletedoctor($id){
     //update table
-    $data=doctor::find($id);
-    $data->delete();
+    $data=doctor::find($id);  // Find the doctor by the given id
+    $data->delete(); // Delete the doctor
 
-    return redirect()->back();
+    return redirect()->back();// Redirect back
 }
-
+//admin can update doctor
 public function updatedoctor($id){
     $data=doctor::find($id);
     return view('admin.update_doctor',compact('data'));
 }
-
+//admin edit new data and save to db
 public function editdoctor(Request $request, $id){
-    $doctor=doctor::find($id);
+    $doctor=doctor::find($id); // Find the doctor by the given id
 
+    // Update the doctor attributes from the request
     $doctor->name=$request->name;
     $doctor->email=$request->email;
     $doctor->phone=$request->phone;
@@ -97,72 +100,74 @@ public function editdoctor(Request $request, $id){
     if($image)
     {
         $imagename=time().'.'.$image->getClientOriginalExtension();
-        //move to public folder
+        // Move the image to the public folder
         $request->file->move('doctorimage', $imagename);
 
-        //save img from public folder to db
+        // Save the image name to the database
         $doctor->image=$imagename;
     }
 
-    $doctor->save();
+    $doctor->save(); // Save the updated doctor
 
 
-    return redirect()->back()->with('message','Doctor Updated Successfully');
+    return redirect()->back()->with('message','Doctor Updated Successfully'); // Redirect back with success message
 }
 
 //Post
-
+//Admin can add new post
 public function addpost(){
 
-    return view('admin.add_post');
+    return view('admin.add_post'); // Render the add_post view for the admin
 }
 
+//upload post to db
 public function uploadpost(Request $request){
-    $post = new Post;
+    $post = new Post; // Create a new instance of the Post model
 
-    //get image file
+    // Get the image file from the request
     $image=$request->file;
 
-    //using time and file type as the name
+    // Generate a unique image name using the current time and file extension
     $imagename=time().'.'.$image->getClientOriginalExtension();
 
-    //move to public folder
+    // Move the image to the public folder
     $request->file->move('post', $imagename);
 
-    //save img from public folder to db
+     // Save the image name to the database
     $post->image=$imagename;
-
+  // Set other attributes of the post model from the request
     $post->title=$request->title;
     $post->name=$request->name;
     $post->link=$request->link;
-    $post->save();
+    $post->save(); // Save the post data to the database
 
-    return redirect()->back()->with('message','Post Added Successfully');
+    return redirect()->back()->with('message','Post Added Successfully'); // Redirect back with success message
 }
 
+//Admin can view all post
 public function showpost(){
 
-    $post=Post::all();
+    $post=Post::all(); // Get all posts
 
-    return view('admin.showpost',compact('post'));
+    return view('admin.showpost',compact('post')); // Render the showpost view with the posts data
 }
-
+//Admin can delete post
 public function deletepost($id){
-    //update table
-    $data=Post::find($id);
-    $data->delete();
 
-    return redirect()->back();
+    $data=Post::find($id); // Find the post by the given id
+    $data->delete(); // Delete the post
+
+    return redirect()->back(); // Redirect back
 }
-
+//Admin can update post
 public function updatepost($id){
-    $data=Post::find($id);
-    return view('admin.update_post',compact('data'));
+    $data=Post::find($id); // Find the post by the given id
+    return view('admin.update_post',compact('data')); // Render the update_post view with the post data
 }
 
 public function editpost(Request $request, $id){
-    $data=Post::find($id);
-
+    $data=Post::find($id); // Find the post by the given id
+// Update the post attributes from the request
     $data->title=$request->title;
     $data->name=$request->name;
     $data->link=$request->link;
@@ -171,17 +176,17 @@ public function editpost(Request $request, $id){
     if($image)
     {
         $imagename=time().'.'.$image->getClientOriginalExtension();
-        //move to public folder
+        // Move the image to the public folderr
         $request->file->move('post', $imagename);
 
-        //save img from public folder to db
+        // Save the image name to the database
         $data->image=$imagename;
     }
 
-    $data->save();
+    $data->save();// Save the updated post
 
 
-    return redirect()->back()->with('message','Post Updated Successfully');
+    return redirect()->back()->with('message','Post Updated Successfully'); // Redirect back with success message
 }
 
 }
