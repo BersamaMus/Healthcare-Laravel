@@ -69,3 +69,11 @@ Dashboard Mockup
 Homepage Mockup
 
 ![Homepage template](https://github.com/BersamaMus/Web-Project/assets/130168686/592ca589-154f-47e5-9f81-2fbf0852af08)
+
+Project system captured screen and explanation
+
+
+What is the challenge/difficulties to develop the application
+
+Wan SaifulAmir:
+The most challenging aspect of working with Laravel is the interconnected nature of its components. Making changes to one component without considering their impact on others can lead to functionality issues and potential breakages in the application. This challenge is especially critical when dealing with user authentication, as any alterations or customizations without a thorough understanding can result in login failures, access restrictions, or security vulnerabilities.
