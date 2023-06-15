@@ -37,7 +37,6 @@ Allows administrators to manage patient records, including personal information,
 
 2. Medical Resources
 Provides a collection of healthcare resources such as articles, guidelines, and research papers.
-
 Administrators can add new resources, update existing ones, list available resources, and remove outdated or irrelevant materials.
 
 3. Appointment 
@@ -57,16 +56,16 @@ Staff members can access their profiles to update availability and view assigned
 ![New DB (4)](https://github.com/BersamaMus/Web-Project/assets/130168686/05ecd496-57d1-4f3d-8066-76b9328e8322)
 
 
-Sequence Diagram
+## Sequence Diagram
 ![Untitled (1)](https://github.com/BersamaMus/Web-Project/assets/130168686/9a26c0af-6bd1-47a1-82ec-917dcd916258)
 
 
-Mockup Website Design
+## Mockup Website Design
 
-Dashboard Mockup
+### Dashboard Mockup
 ![Dashboard](https://github.com/BersamaMus/Web-Project/assets/130168686/072ddb33-dca2-4d7c-a585-e569e0d5f54a)
 
-Homepage Mockup
+### Homepage Mockup
 
 ![Homepage template](https://github.com/BersamaMus/Web-Project/assets/130168686/592ca589-154f-47e5-9f81-2fbf0852af08)
 
