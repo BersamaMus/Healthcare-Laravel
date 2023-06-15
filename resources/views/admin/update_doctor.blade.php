@@ -63,7 +63,7 @@
 
                     <div style="padding: 15px; display: flex; align-items: center;">
                         <label style="margin-right: 29px;">Specialty:</label>
-                        <select name="speciality" style="color: black;">
+                        <select name="specialty" style="color: black;">
                             <option>--Select--</option>
                             <option value="Internal Medicine" {{ $data->specialty == "Internal Medicine" ? 'selected' : '' }}>Internal Medicine</option>
                             <option value="Pediatrics" {{ $data->specialty == "Pediatrics" ? 'selected' : '' }}>Pediatrics</option>
