@@ -57,7 +57,8 @@ Staff members can access their profiles to update availability and view assigned
 
 
 ## Sequence Diagram
-![Untitled (1)](https://github.com/BersamaMus/Web-Project/assets/130168686/9a26c0af-6bd1-47a1-82ec-917dcd916258)
+
+![ERD (Latest)](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/73c6bf69-b7e1-4312-967b-7486dae45cd1)
 
 
 ## Mockup Website Design
@@ -69,10 +70,94 @@ Staff members can access their profiles to update availability and view assigned
 
 ![Homepage template](https://github.com/BersamaMus/Web-Project/assets/130168686/592ca589-154f-47e5-9f81-2fbf0852af08)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Post-presentation (15/6/2023)
+
 ## Project system captured screen and explanation
 
+1) Homepage (Main page for user and admin)
 
-## What is the challenge/difficulties to develop the application
+![Homepage1](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/85104bc1-d341-4353-b050-8f2ed3b3bca5)
+
+Contains buttons for My Appointment, Login (For User and Admin), Register (For User). 
+
+2) Homepage (When scrolled down)
+
+![Homepage2](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/12fddf39-5c68-427a-a86e-c5323aa25fc9)
+
+Contains pleasant interface and summary on our services.
+
+3) Homepage (When scrolled to the bottom)
+
+![Homepage3](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/350ba617-2430-45cb-a75d-bf0d77fd2e6f)
+
+ Contains Latest News (When clicked, will direct user to new's origin website), and Make An Appointment (For user to make appointment and can view appointment if logged in).
+ 
+ 4) Login (For admin or user depending on email)
+
+![login](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/1c5a20cc-3ee7-4940-9d70-c8664e2aea31)
+
+If email correlates with admin, redirect to admin's dashboard, but if user logs in, back to homepage).
+
+5) Register (For user)
+
+![register](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/a528c20a-90ed-4e79-9ae5-87982df44816)
+
+For user to register their information to view their appointments.
+
+6) My Appointment (For user)
+
+![User-myappointment](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/3a6df1bf-d087-4031-92ee-36f25d319145)
+
+Once user logs in and has made an appointment via bottom of homepage, their appointment will show up here.
+
+7) Admin dashboard (When admin logs in, this is what they will see)
+
+![Admin-dashboard](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/84894fe9-e5a4-44ba-aa1a-0b398e104611)
+
+This is the mainpage for admin to add, update, or delete any information regarding doctor information and latest news. Admin can also approve or reject a user's appointment request through Manage Appointment.
+In the left side are pages to Manage Appointment, Add Doctors, Manage Doctors, Add Posts (Latest news), Manage Posts.
+
+8) Admin manage appointment
+
+![Admin-manageappointment](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/ce60edfd-14da-4f25-8d56-2d9f71fb488a)
+
+For admin to manage a user's request for an appointment. If approved or rejected, the status will be updated on the user's page of My Appointment.
+
+9) Admin add doctor
+
+![Admin-adddoctor](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/abd77ba5-c1a4-4d78-a05b-88aa2024aef0)
+
+ For admin to add a doctor's information. When added, it will be displayed on the user's homepage.
+ 
+9) Admin manage doctor
+
+![Admin-managedoctor](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/9d0c02ef-970f-474f-9757-9ca1b5717492)
+
+For admin to update or delete any doctor's information. When updated, will be updated on homepage and when deleted, will be removed from the homepage.
+
+10) Admin add post
+
+![Admin-addpost](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/27009824-2638-406d-9b69-cde91b08c444)
+
+For admin to add a post on the Latest News section on the homepage. When added, the new post will be shown on the homepage.
+
+11) Admin manage post
+
+![Admin-managepost](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/0b716fef-9886-4660-937f-c3ae0fdcb47c)
+
+For admin to update or delete any posts on the homepage. When updated, the post will be updated on the homepage and when deleted, will be removed from the homepage.
+
+12) Footer
+
+![Footer](https://github.com/BersamaMus/Healthcare-Laravel/assets/130168686/292370bd-cda8-4163-a849-4c53248b9c4e)
+
+The footer for user homepage. A standard set of elements to have in a website.
+
+
+
+## Challenge/difficulties to develop the application
 
 ### Wan SaifulAmir:
 > The most challenging aspect of working with Laravel is the interconnected nature of its components. Making changes to one component without considering their impact on others can lead to functionality issues and potential breakages in the application. This challenge is especially critical when dealing with user authentication, as any alterations or customizations without a thorough understanding can result in login failures, access restrictions, or security vulnerabilities.  :+1:
